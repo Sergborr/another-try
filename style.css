@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+img {
+	height: 90px;
+	width: 100%;
+}	
+.clearfix::after,
+.page_content::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+.page_content {
+	margin: 0 auto;
+	max-width: 1200px;
+	border-bottom: 2px solid black;
+	padding-top: 50px;
+}
+.header_logo {
+	float: left;
+}
+.header_contact {
+	float:right;
+	text-align: right;
+}
+.phone_number {
+	font-size: 20px;
+}
+
+.phone_number,
+.email_addres, {	
+	text-decoration: none;
+	color: black;
+}
+.header_menu {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.menu_style a{
+	text-decoration: none;
+}
+
