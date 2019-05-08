@@ -8,17 +8,18 @@ body {
 	background-repeat: no-repeat;
 	margin: 0;
 }
-img {
+#logo {
 	height: 90px;
 	width: 100%;
 }	
 .clearfix::after,
-.page_content::after {
+.page_info::after,
+.content::after {
 	content:"";
 	display: table;
 	clear: both;
 }
-.page_content {
+.page_info {
 	margin: 0 auto;
 	max-width: 1200px;
 	border-bottom: 2px solid black;
@@ -32,19 +33,63 @@ img {
 	text-align: right;
 }
 .phone_number {
-	font-size: 20px;
+	font-size: 25px;
 }
 
-.phone_number,
-.email_addres, {	
+.header_contact_phone a,
+.header_contact_email a {
 	text-decoration: none;
-	color: black;
+	color: #000;
 }
 .header_menu {
 	max-width: 1200px;
 	margin: 0 auto;
+	font-size: 20px;
 }
-.menu_style a{
+.menu_style a {
 	text-decoration: none;
 }
+.menu_style {
+	list-style: none;
+	display: flex;
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+.menu_style_dec {
+	margin: 0 auto;
+	text-align: center;
+}
+.menu_link {
+	display: block;
+	margin: 15px;
+	color: #000;
 
+}
+.menu_link:hover {
+	color: red;
+}
+.slider_lawyer {
+	height: 600px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+.content {
+	padding-top: 15px;
+	display: flex;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+.content_photo {
+	float: left;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+.content_info {
+	float: right;
+	padding-left: 100px;
+	padding-right: 600px;
+}
