@@ -91,3 +91,6 @@ body {
 	padding-left: 100px;
 	padding-right: 600px;
 }
+.content_info h2 {
+	text-align: center;
+}
