@@ -72,9 +72,7 @@ body {
 }
 .slider_lawyer {
 	height: 600px;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat; 
+	background: url("backgr.jpg") no-repeat 50% 50% / cover;
 }
 .content {
 	padding-top: 15px;
