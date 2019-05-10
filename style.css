@@ -8,16 +8,12 @@ body {
 	background-repeat: no-repeat;
 	margin: 0;
 }
+.clearfix {
+	overflow: hidden;
+}
 #logo {
 	height: 90px;
 	width: 100%;
-}	
-.clearfix::after,
-.page_info::after,
-.content::after {
-	content:"";
-	display: table;
-	clear: both;
 }
 .page_info {
 	margin: 0 auto;
@@ -72,16 +68,13 @@ body {
 }
 .slider_lawyer {
 	height: 600px;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat; 
+	background: url("backgr.jpg") no-repeat 50% 50% / cover;
 }
 .content {
 	padding-top: 15px;
 	display: flex;
 	padding-left: 100px;
 	padding-right: 100px;
-
 }
 .content_photo {
 	float: left;
@@ -92,4 +85,7 @@ body {
 	float: right;
 	padding-left: 100px;
 	padding-right: 600px;
+}
+.content_info h2 {
+	text-align: center;
 }
